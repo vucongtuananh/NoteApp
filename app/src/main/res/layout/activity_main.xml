@@ -25,7 +25,6 @@
         android:id="@+id/findBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-
         android:layout_marginStart="168dp"
         android:background="@drawable/boder_box_btn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +38,6 @@
         android:id="@+id/infoBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-
         android:layout_marginEnd="24dp"
         android:background="@drawable/boder_box_btn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,24 +49,29 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listNoteItem"
         android:layout_width="358dp"
-        android:layout_height="609dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addNoteBtn"
-        android:layout_width="60dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/circle_btn"
-        android:text="Button"
+        android:contentDescription="Add Note"
+        android:src="@drawable/add_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/background"
+        app:tint="@android:color/white"
+        />
+
+
+
 
     <TextView
         android:id="@+id/emptyList"
