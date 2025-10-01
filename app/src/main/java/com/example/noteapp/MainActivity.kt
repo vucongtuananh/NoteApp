@@ -1,22 +1,19 @@
 package com.example.noteapp
 
-import android.app.ComponentCaller
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.size
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.noteapp.localdb.AppDatabase
 import com.example.noteapp.singleton.DatabaseProvider
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.launch
 import kotlin.random.Random
 
@@ -54,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val addNoteBtn = findViewById<Button>(R.id.addNoteBtn)
+        val addNoteBtn = findViewById<FloatingActionButton>(R.id.addNoteBtn)
         addNoteBtn.setOnClickListener {
             val intent = Intent(this, AddNoteActivity::class.java)
             startActivityForResult(intent,1)
