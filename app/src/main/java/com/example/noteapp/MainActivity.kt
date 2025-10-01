@@ -21,7 +21,13 @@ import kotlinx.coroutines.launch
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
-        var adapter = ItemNote(emptyList(),emptyList())
+        var adapter = ItemNote(emptyList(),emptyList(), onClickListener = {
+                note ->
+            val intent = Intent(this@MainActivity, NoteDetailActivity::class.java)
+            intent.putExtra("title", note.title)
+            intent.putExtra("content", note.content)
+            startActivity(intent)
+        })
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -47,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.emptyList).visibility = View.GONE
             val listColor = generateColorList(notes.size)
             val listTitle = notes.map { it.title }
-            adapter.updateData(newTitle = listTitle, newColors = listColor)
+            adapter.updateData(newListNotes = notes, newColors = listColor)
             }
         }
 
@@ -82,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.emptyList).visibility = View.GONE
                     val listColor = generateColorList(notes.size)
                     val listTitle = notes.map { it.title }
-                    adapter.updateData(newTitle = listTitle, newColors = listColor)
+                    adapter.updateData(newListNotes = notes, newColors = listColor)
                 }
             }
         }

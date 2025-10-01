@@ -2,18 +2,15 @@ package com.example.noteapp
 
 import android.annotation.SuppressLint
 import android.graphics.drawable.GradientDrawable
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.RecyclerView
 
-class ItemNote(private var notes : List<String>, private var colors : List<Int> = emptyList<Int>()) : RecyclerView.Adapter<ItemNote.NoteViewHolder>()  {
+import androidx.recyclerview.widget.RecyclerView
+import com.example.noteapp.entity.Note
+
+class ItemNote(private var notes : List<Note>, private var colors : List<Int> = emptyList<Int>(), private val onClickListener: (Note) -> Unit) : RecyclerView.Adapter<ItemNote.NoteViewHolder>()  {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -23,9 +20,12 @@ class ItemNote(private var notes : List<String>, private var colors : List<Int> 
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        holder.tvTitle.text = notes[position]
+        holder.tvTitle.text = notes[position].title
         if(colors.isNotEmpty()) {
         holder.item.setColor(colors[position])
+        }
+        holder.itemView.setOnClickListener {
+            onClickListener(notes[position])
         }
     }
 
@@ -35,8 +35,8 @@ class ItemNote(private var notes : List<String>, private var colors : List<Int> 
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateData(newTitle : List<String>, newColors: List<Int>){
-        notes = newTitle
+    fun updateData(newListNotes : List<Note>, newColors: List<Int>){
+        notes = newListNotes
         colors = newColors
         notifyDataSetChanged()
 
