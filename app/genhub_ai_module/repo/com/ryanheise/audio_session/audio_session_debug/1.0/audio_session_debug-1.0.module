@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ryanheise.audio_session",
+    "module": "audio_session_debug",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "audio_session_debug-1.0.aar",
+          "url": "audio_session_debug-1.0.aar",
+          "size": 27122,
+          "sha512": "6e4c9ae53eb3b30939840ca9f3c7e05541a2036400be038da96608d3707987639bca4f2ae0cd582f249d3a4f1c226e61c8c6f3c4b2c6cd44fceb8afef45fd47f",
+          "sha256": "935a03e78efab10e6c0bcba88561b6e4506643a294a8cb2ea7c3bec55301f598",
+          "sha1": "11fc8ea403433efb3039d1fcd06acd781cb96ab7",
+          "md5": "fe8f96f7a1d31ea101652b2675d90c98"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_debug",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "audio_session_debug-1.0.aar",
+          "url": "audio_session_debug-1.0.aar",
+          "size": 27122,
+          "sha512": "6e4c9ae53eb3b30939840ca9f3c7e05541a2036400be038da96608d3707987639bca4f2ae0cd582f249d3a4f1c226e61c8c6f3c4b2c6cd44fceb8afef45fd47f",
+          "sha256": "935a03e78efab10e6c0bcba88561b6e4506643a294a8cb2ea7c3bec55301f598",
+          "sha1": "11fc8ea403433efb3039d1fcd06acd781cb96ab7",
+          "md5": "fe8f96f7a1d31ea101652b2675d90c98"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "audio_session_debug-1.0-sources.jar",
+          "url": "audio_session_debug-1.0-sources.jar",
+          "size": 6086,
+          "sha512": "4ca8ae7c5af7730b542be7fc919b58f31bedb0a75dc7192c5da66037cebb6f953d6f1d86c34ee4e0041534e5f70bd90b12087873ad6c5fdebd5a724c7d7b01e4",
+          "sha256": "dd9a7e4f167540e552f982ddcea86ca891477dbf25b753e647da3320078c5441",
+          "sha1": "03505763542bd7923c33877bafabaf804f63130c",
+          "md5": "9258466234ab5fd979954ee1b9771a89"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "audio_session_debug-1.0-javadoc.jar",
+          "url": "audio_session_debug-1.0-javadoc.jar",
+          "size": 284475,
+          "sha512": "eee20c2d2fe903a83bcc316763bf186d096d05e26bfca81becf8525953428c5377fc462c268ebb058b8035e67946eccf1903f76bb07d993aef814aefb9c4ee27",
+          "sha256": "a3ce624455cbb294e88aa35e8c0046dcd1be4f9560a37fc88237b1469733f47c",
+          "sha1": "f2244faf565934a269aae8b162aec0fbdce58e32",
+          "md5": "254771de2e3d5344f8978e991d7c2ece"
+        }
+      ]
+    }
+  ]
+}

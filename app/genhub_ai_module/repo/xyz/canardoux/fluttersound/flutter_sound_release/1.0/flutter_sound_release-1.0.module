@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "xyz.canardoux.fluttersound",
+    "module": "flutter_sound_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_sound_release-1.0.aar",
+          "url": "flutter_sound_release-1.0.aar",
+          "size": 17846,
+          "sha512": "dcbe1d4a0fd61b642336ee55ada90637ff2e120654c205cebcce16ef0e7cc0d1d2f7c91ff80f4576c2d3aab3fc37d8fb1a3b1f69d344e0ca463fffb1f1fd6544",
+          "sha256": "55dbabbdbee7cc704fbd2df690dcc010c952d9a53ad7a13f88244286303ae3fc",
+          "sha1": "b14da187bea14dae3b73186add77cab72dd4df5b",
+          "md5": "0c526b4042a27269982b2e3e8d6dd66a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "androidx.media",
+          "module": "media",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.github.canardoux",
+          "module": "flutter_sound_core",
+          "version": {
+            "requires": "9.28.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_sound_release-1.0.aar",
+          "url": "flutter_sound_release-1.0.aar",
+          "size": 17846,
+          "sha512": "dcbe1d4a0fd61b642336ee55ada90637ff2e120654c205cebcce16ef0e7cc0d1d2f7c91ff80f4576c2d3aab3fc37d8fb1a3b1f69d344e0ca463fffb1f1fd6544",
+          "sha256": "55dbabbdbee7cc704fbd2df690dcc010c952d9a53ad7a13f88244286303ae3fc",
+          "sha1": "b14da187bea14dae3b73186add77cab72dd4df5b",
+          "md5": "0c526b4042a27269982b2e3e8d6dd66a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_sound_release-1.0-sources.jar",
+          "url": "flutter_sound_release-1.0-sources.jar",
+          "size": 12200,
+          "sha512": "6ff8af4773c524e5d124bff890304f2e8fa709bf1749dcee85bfbd311a35ecf0284cb3d786ed082ebf8b3f592b8c8e3c81629405b35062c13437b991867090a8",
+          "sha256": "d7db692ee0ee6fc01c4c67f3baa2f7aad74433722e2a891a711f212f2a41f442",
+          "sha1": "93af1814ca89653791b679b992e16fe68e0fa24d",
+          "md5": "3f4c7315b6c8672b7a917855b7b03454"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_sound_release-1.0-javadoc.jar",
+          "url": "flutter_sound_release-1.0-javadoc.jar",
+          "size": 297812,
+          "sha512": "e0af16be996b9777e7a6932cb0cad79488c6bb53fb91532e4b22ae5db1e3d828af328370e28645c1dfaed4192cf49ed929aae72b80f753f778ed04c451d44028",
+          "sha256": "4d4c69e072c237472f9342357a4e718f47f8c129bbc5467b45e485cff859d276",
+          "sha1": "c19919310c312eca5cac95d33183968652dd8289",
+          "md5": "cd1d7c67e496c07bec819fee97c56a4a"
+        }
+      ]
+    }
+  ]
+}

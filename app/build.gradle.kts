@@ -26,6 +26,15 @@ android {
                 "proguard-rules.pro"
             )
         }
+        create("profile") {
+            // Kế thừa cấu hình từ debug cho tiện (symbols, debuggable, vv.)
+            initWith(getByName("debug"))
+            isDebuggable = true
+
+            // Khi một số lib/variant không có biến thể "profile",
+            // Gradle sẽ fallback sang "debug" để giải quyết phụ thuộc/manifest
+            matchingFallbacks += listOf("debug")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -60,5 +69,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+//    debugImplementation("com.example.flutter_counter_module:flutter_debug:1.0")
+//    releaseImplementation("com.example.flutter_counter_module:flutter_release:1.0")
+//    add("profileImplementation", "com.example.flutter_counter_module:flutter_profile:1.0")
+    debugImplementation("com.example.genhub_sdk:flutter_debug:1.0")
+    releaseImplementation("com.example.genhub_sdk:flutter_profile:1.0")
+    add("profileImplementation", "com.example.genhub_sdk:flutter_release:1.0")
 
 }

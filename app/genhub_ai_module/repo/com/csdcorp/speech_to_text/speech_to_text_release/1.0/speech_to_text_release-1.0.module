@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.csdcorp.speech_to_text",
+    "module": "speech_to_text_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "speech_to_text_release-1.0.aar",
+          "url": "speech_to_text_release-1.0.aar",
+          "size": 28929,
+          "sha512": "5a7004099492f0130a1eb99233e05be5c7c1985893484e5fb8f4fa55566b9f694dc0afb397724d0f71c6d55dbe13e2a60b67907462c23fc8c08f347b095a4ff7",
+          "sha256": "4662b9d4610da8e7987f81671d067627a11db6a18a7d4a0dc696df9a510be74d",
+          "sha1": "37a7ebb0b5d43832ac03af26504f4ec87fe5c478",
+          "md5": "46a932a17d81a52b7cd4c76498b05098"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "speech_to_text_release-1.0.aar",
+          "url": "speech_to_text_release-1.0.aar",
+          "size": 28929,
+          "sha512": "5a7004099492f0130a1eb99233e05be5c7c1985893484e5fb8f4fa55566b9f694dc0afb397724d0f71c6d55dbe13e2a60b67907462c23fc8c08f347b095a4ff7",
+          "sha256": "4662b9d4610da8e7987f81671d067627a11db6a18a7d4a0dc696df9a510be74d",
+          "sha1": "37a7ebb0b5d43832ac03af26504f4ec87fe5c478",
+          "md5": "46a932a17d81a52b7cd4c76498b05098"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "speech_to_text_release-1.0-sources.jar",
+          "url": "speech_to_text_release-1.0-sources.jar",
+          "size": 7779,
+          "sha512": "30078eeaf635899fe3732db26a3ca9f56043a1036921077c65277abdb841ae85d460a44ee66c080470608c7d5c186118b613908a1939ed7a70f9abd8c59e2404",
+          "sha256": "7cf97a99e8a32a161d6f02fc1d208bc2b5f8d1d34f7f1e58951bb4f374785288",
+          "sha1": "c3f13064642dd662296006e335506aa0a033a13e",
+          "md5": "314ba7a96f1a4b1271ae2635771f92bf"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "speech_to_text_release-1.0-javadoc.jar",
+          "url": "speech_to_text_release-1.0-javadoc.jar",
+          "size": 303210,
+          "sha512": "6172dafd2d7bc13a2462d5bd38065c2e3806d513afdf2ba96f5b37e5ccdc7b7043be19a382ecf9c16944a4bcc2a3390d091b7e460dfbead82e30f9031c6fd496",
+          "sha256": "34fffbf221a7f49ff8798443ae0ba7d2f9f2d87c4bca4df0bef22dbbba967c25",
+          "sha1": "31baaeca98f43e9c504cd02c9543862b8b3fce7b",
+          "md5": "43057c000998458e39af5d3f4f6805af"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.flutter.plugins.urllauncher",
+    "module": "url_launcher_android_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "url_launcher_android_release-1.0.aar",
+          "url": "url_launcher_android_release-1.0.aar",
+          "size": 22067,
+          "sha512": "6dd22048117f7ef08f0abef01d36a44b329bd20cbc9b8926786d693a02dfa94a022897e9f1e91862c852eae25c913d4fb6d42ac81830928208c47a8cce368ab9",
+          "sha256": "6e8f91901bb0320f2374b691c50c22c53b758968f84c2cbd29086e4b1bd8323b",
+          "sha1": "44d46c3e7164990a3343fa85b946d4e79ce7bb46",
+          "md5": "2846a5542b423245a3dbff41b221b79a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.9.1"
+          }
+        },
+        {
+          "group": "androidx.browser",
+          "module": "browser",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "url_launcher_android_release-1.0.aar",
+          "url": "url_launcher_android_release-1.0.aar",
+          "size": 22067,
+          "sha512": "6dd22048117f7ef08f0abef01d36a44b329bd20cbc9b8926786d693a02dfa94a022897e9f1e91862c852eae25c913d4fb6d42ac81830928208c47a8cce368ab9",
+          "sha256": "6e8f91901bb0320f2374b691c50c22c53b758968f84c2cbd29086e4b1bd8323b",
+          "sha1": "44d46c3e7164990a3343fa85b946d4e79ce7bb46",
+          "md5": "2846a5542b423245a3dbff41b221b79a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "url_launcher_android_release-1.0-sources.jar",
+          "url": "url_launcher_android_release-1.0-sources.jar",
+          "size": 9162,
+          "sha512": "7e3bd2e3be9159622da98e5e5b1c80e3ca1e9b4afbd3e802a034560d23d3e7151d176c6b18144d174e804ad52275dbd540146a178b4337f525033e68f1979fe2",
+          "sha256": "c04d32614b84573ca248e0722a706be40c939b6db4795febe35621b9b8a1db7c",
+          "sha1": "e76081802d5c3406c5685427e55d75f2dcaf9bae",
+          "md5": "a18f266a4d30313b06bc5b18dd0bd4d0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "url_launcher_android_release-1.0-javadoc.jar",
+          "url": "url_launcher_android_release-1.0-javadoc.jar",
+          "size": 332749,
+          "sha512": "871ad69c9ab1b3149436e4f789b79d567bb08853be89128dd70f5aa40ab7578a7677302fb001bcbec745b83d4dda438e8c40c1d510135a2ec6ab8e506db3237d",
+          "sha256": "3dc7070a937ca3429349968c65fd119fbc21c9a6f64fa6e9f22a82380ba1aa03",
+          "sha1": "ecc33632d68fa4e65a20c743be8148bf864a5316",
+          "md5": "d46d67e3d5562f8f86416207afdff780"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ryanheise.just_audio",
+    "module": "just_audio_profile",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "profileVariantProfileApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "just_audio_profile-1.0.aar",
+          "url": "just_audio_profile-1.0.aar",
+          "size": 30418,
+          "sha512": "82de6f54b0bb491cb4aabb62c4ef6c14960d8fc39069bcf86507e15a325d825e88414aaa910ed91d88f46102a5cfc5d9904544d62e0b8f488f8cd89f0edafc7f",
+          "sha256": "d692e1f561092bfe1c3aaa7ff62de045dfac7d97a0a56d9a9f8a7b33a941cfe1",
+          "sha1": "32e844ac8afcd346c4731eed6708d70483d22b67",
+          "md5": "75e7ec0ad197316cca654c78129ec370"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_profile",
+          "version": {
+            "requires": "1.0.0-ddf47dd3ff96dbde6d9c614db0d7f019d7c7a2b7"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer-dash",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer-hls",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer-smoothstreaming",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "com.ryanheise.audio_session",
+          "module": "audio_session_profile",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "just_audio_profile-1.0.aar",
+          "url": "just_audio_profile-1.0.aar",
+          "size": 30418,
+          "sha512": "82de6f54b0bb491cb4aabb62c4ef6c14960d8fc39069bcf86507e15a325d825e88414aaa910ed91d88f46102a5cfc5d9904544d62e0b8f488f8cd89f0edafc7f",
+          "sha256": "d692e1f561092bfe1c3aaa7ff62de045dfac7d97a0a56d9a9f8a7b33a941cfe1",
+          "sha1": "32e844ac8afcd346c4731eed6708d70483d22b67",
+          "md5": "75e7ec0ad197316cca654c78129ec370"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "just_audio_profile-1.0-sources.jar",
+          "url": "just_audio_profile-1.0-sources.jar",
+          "size": 12367,
+          "sha512": "2eba84c4eaf56d746d92b9c441394d778f95430542c70651f53da2952bac03723ef9faa4a6fe0092e26552caa5c7ddfe39519196a362aad35816415e44fa74a5",
+          "sha256": "cd77c71ce6d19744b96dececbdbd80a8a7b4885024a49f9ab338977af3d2d0d0",
+          "sha1": "710a1b4889a1c3b4bbd706a40003c05e0193a9bc",
+          "md5": "848ba57b390dfb54191e690b40ec57ed"
+        }
+      ]
+    },
+    {
+      "name": "profileVariantProfileJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "just_audio_profile-1.0-javadoc.jar",
+          "url": "just_audio_profile-1.0-javadoc.jar",
+          "size": 298924,
+          "sha512": "f8464d88583e6f28457bc96e317c756b42c581a3d2957d4f5a03495e1d6304782f4f15331baf872366877f4cad7cc415e6babbf5763f059a0c45bc3da2326387",
+          "sha256": "66194fcabd330341d480172950a4393773d5c057d96e9cd4bd60fe50508b7091",
+          "sha1": "02d41e2472422e0c673861023d0ec965cb745e9e",
+          "md5": "cfc2c06c53fee09f49973cfb6ffda185"
+        }
+      ]
+    }
+  ]
+}
